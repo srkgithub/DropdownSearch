@@ -1,0 +1,3 @@
+@Imports JqueryControls.Areas.HelpPage.ModelDescriptions
+@ModelType SimpleTypeModelDescription
+@Model.Documentation

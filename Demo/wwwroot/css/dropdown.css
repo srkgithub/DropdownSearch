@@ -1,0 +1,16 @@
+﻿a.jxtDropDownText {
+    display: block;
+}
+
+div.jxtFilterSearch {
+    background-color: white;
+}
+
+div.jxtFilterBoxHide {
+    display: none;
+}
+
+div.jxtFilterBox {
+    border:10px;
+}
+
