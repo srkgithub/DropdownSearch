@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{CEBB5989-04B7-4A81-9712-4A2B52D36D37}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "JqueryControls", "JqueryControls\JqueryControls.vbproj", "{9AD30E22-6C7D-4145-810D-D11A880FBF9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JxtHtmlControls", "JxtHtmlControls\JxtHtmlControls.csproj", "{280C7983-DE18-475D-BE66-BE72D3D15856}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CEBB5989-04B7-4A81-9712-4A2B52D36D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEBB5989-04B7-4A81-9712-4A2B52D36D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEBB5989-04B7-4A81-9712-4A2B52D36D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEBB5989-04B7-4A81-9712-4A2B52D36D37}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9AD30E22-6C7D-4145-810D-D11A880FBF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AD30E22-6C7D-4145-810D-D11A880FBF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AD30E22-6C7D-4145-810D-D11A880FBF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9AD30E22-6C7D-4145-810D-D11A880FBF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{280C7983-DE18-475D-BE66-BE72D3D15856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280C7983-DE18-475D-BE66-BE72D3D15856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280C7983-DE18-475D-BE66-BE72D3D15856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280C7983-DE18-475D-BE66-BE72D3D15856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

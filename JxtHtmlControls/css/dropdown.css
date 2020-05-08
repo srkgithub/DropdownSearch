@@ -1,0 +1,20 @@
+﻿a.jxtDropDownText {
+    display: block;
+}
+
+div.jxtFilterSearch {
+    background-color: transparent;
+}
+
+div.jxtFilterBoxHide {
+    display: none;
+}
+
+div.jxtFilterBox {
+    border:1px;
+}
+
+input.searchBox{
+    margin-top:1px;
+    table-layout:fixed;
+}
