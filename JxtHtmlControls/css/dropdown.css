@@ -3,6 +3,7 @@
 }
 
 div.jxtFilterSearch {
+    position:relative;
     background-color: transparent;
 }
 
@@ -12,9 +13,11 @@ div.jxtFilterBoxHide {
 
 div.jxtFilterBox {
     border:1px;
+    width:100%;
+    position:absolute;
 }
 
-input.searchBox{
-    margin-top:1px;
-    table-layout:fixed;
+input.searchBox {
+    margin-top: 1px;
 }
+

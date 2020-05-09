@@ -72,7 +72,6 @@
     <Content Include="form.css" />
     <Content Include="form.js" />
     <Content Include="formpage.html" />
-    <Content Include="Images\sun-2297961_1920.jpg" />
     <Content Include="index.html" />
     <Content Include="js\dropdown.js" />
     <Content Include="js\jquery-3.2.1.min.js" />
@@ -90,6 +89,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
