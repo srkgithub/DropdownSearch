@@ -14,24 +14,32 @@
     <script src="form.js"></script>
 
 </head>
-    <body >
+    <body>
         <div class="container">
             <div id="form-main">
                 <div id="form-div">
-                    <form class="montform" id="reused_form" >
+                    <form class="montform" id="reused_form">
                         <p class="name">
                             <input name="tName" type="text" class="form-control" required placeholder="Name" id="tName" />
                         </p>
                         <p class="text">
-                            <div id="filterSearch" class="jxtFilterSearch">
-                                <input type="text" id="searchBox" name="searchBox" class="form-control" placeholder="Location" autocomplete="off"/>
-                                <div class="jxtFilterBox" id="searchFrame">
+                            <div id="dept" class="jxtFilterSearch">
+                                <input type="text" id="deptName" name="deptName" class="form-control dropdownindex" placeholder="Department" autocomplete="off" dataselect="dataDepartment" />
+                                <div class="jxtFilterBox" id="deptFrame">
                                     <!--Don't Place any code here-->
                                 </div>
                             </div>
                         </p>
                         <p class="text">
                             <textarea name="message" class="form-control" id="tcomment" placeholder="Message"></textarea>
+                        </p>
+                        <p class="text">
+                            <div id="location" class="jxtFilterSearch">
+                                <input type="text" id="locationName" name="locationName" class="form-control dropdownindex" placeholder="Location" autocomplete="off" dataselect="dataLocation" />
+                                <div class="jxtFilterBox" id="locationFrame">
+                                    <!--Don't Place any code here-->
+                                </div>
+                            </div>
                         </p>
                         <div class="submit">
                             <button type="button" class="button-blue">SUBMIT</button>
