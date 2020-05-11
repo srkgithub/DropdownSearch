@@ -1,5 +1,6 @@
 ﻿a.jxtDropDownText {
     display: block;
+    background-color: #cfd8de !important;
 }
 
 div.jxtFilterSearch {
@@ -20,4 +21,10 @@ div.jxtFilterBox {
 input.searchBox {
     margin-top: 1px;
 }
+
+a.jxtDropDownText:hover {
+    display: block;
+    background-color: #9a89f0 !important;
+}
+
 

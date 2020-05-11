@@ -26,10 +26,6 @@ var dataDepartment = [
 
 
 $(document).ready(function () {
-    //<input type="text" id="searchBox" name="searchBox" class="form-control" placeholder="Location" autocomplete="off" />
-    //    <div class="jxtFilterBox" id="searchFrame">
-    //        <!--Don't Place any code here-->
-    //    </div>
     $.fn.GetData = function (listName) {
         if (listName == "dataDepartment") return dataDepartment;
         if (listName == "dataLocation") return dataLocation;
@@ -38,10 +34,9 @@ $(document).ready(function () {
     }
 
     var ctrlName = "";
-
     var boxColor = "#b3e3f4";
     var barColor = "#9a89f0";
-    var selectedText = "";
+
     $(".dropdownindex").keyup(function (event) {
         ctrlName = "#" + $(this).attr("id");
         var dataSelect = $.fn.GetData($(this).attr("dataselect"));
@@ -52,30 +47,20 @@ $(document).ready(function () {
         $.each(dataSelect, function (index, item) {
             var link = $(ctrlName).next();
             if (item.Name.toUpperCase().indexOf(filterText.toUpperCase()) >= 0) {
-                link.append("<a tabindex=\"-1\" href=\"#\" class=\"jxtDropDownText\"  id=\"" + item.ID + "\"> " + item.Name + "</a > ");
+                link.append("<a tabindex=\"-1\" href=\"#\" class=\"jxtDropDownText form-control\"  id=\"" + item.ID + "\"> " + item.Name + "</a > ");
             }
         });
         var ti = $(this).next().find("a.jxtDropDownText").length;
         if (ti == 0) {
             var link = $(this).next();
-            link.append("<a tabindex=\"-1\" href=\"#\" class=\"jxtDropDownText\">No Results Found</a>");
-            selectedText = "";
+            link.append("<a tabindex=\"-1\" href=\"#\" class=\"jxtDropDownText form-control\">No Results Found</a>");
         }
         $(this).next().show();
         $(this).next().css("background-color", boxColor);
-        $(this).next().css("border-color", "#000000");
-        $(this).next().find("a.jxtDropDownText").hover(function () {
-            $(this).css("background-color", barColor);
-        },
-            function () {
-                $(this).css("background-color", boxColor);
-            }
-        );
         $(this).next().find("a.jxtDropDownText").click(function () {
             if (ti > 0) {
                 $(ctrlName).val($(this).html());
                 $(ctrlName).next().hide();
-                selectedText = $(this).html();
             }
         });
         if ($(this).val().trim().length <= 0) {
@@ -83,24 +68,23 @@ $(document).ready(function () {
         }
 
         if (event.which == 40) {
-
-            $(ctrlName).next().find("a.jxtDropDownText:first").css("background-color", barColor);
+         //   $(ctrlName).next().find("a.jxtDropDownText:first").css("background-color", barColor);
             $(ctrlName).next().find("a.jxtDropDownText:first").focus();
         }
 
         $(this).next().find("a.jxtDropDownText").keyup(function (event) {
             if (event.which == 40) {
-                $(this).next().css("background-color", barColor);
-                $(this).css("background-color", boxColor);
+           //     $(this).next().css("background-color", barColor);
+           //     $(this).css("background-color", boxColor);
                 $(this).next().focus();
             }
             if (event.which == 38) {
                 if ($(this).index() == 0) {
-                    $(this).css("background-color", boxColor);
+           //         $(this).css("background-color", boxColor);
                     $(this).parent().prev().focus();
                 } else {
-                    $(this).prev().css("background-color", barColor);
-                    $(this).css("background-color", boxColor);
+           //         $(this).prev().css("background-color", barColor);
+            //        $(this).css("background-color", boxColor);
                     $(this).prev().focus();
                 }
             }
